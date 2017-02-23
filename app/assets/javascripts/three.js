@@ -1,21 +1,15 @@
 
-var number1 = 1;
-var number2 = 2;
-var number3 = 3;
+var numbers = [];
 
-function three(times1, times2, times3){
+function three(count){
+ if (numbers.indexOf(count) === -1){
+    numbers.push(count);
+ } else{
+  console.log("box already clicked");
+ }
 
-  if (times1 === 1){
-    if (times2 === 2){
-      if (times3 === 3){
-        alert("You've Won!");
-      }
-    }
-  }
-    
-  }
-  else{
-      console.log("try again!");
-  }
+ if (numbers.length === 3){
+    alert("Success");
+ }
   
 }
