@@ -1,11 +1,20 @@
 
-var number = Math.floor((Math.random() * 3) + 1);
+var number1 = 1;
+var number2 = 2;
+var number3 = 3;
 
-function three(times){
+function three(times1, times2, times3){
 
-  if (times === number){
-    alert("You've Won!");
-  }else{
+  if (times1 === 1){
+    if (times2 === 2){
+      if (times3 === 3){
+        alert("You've Won!");
+      }
+    }
+  }
+    
+  }
+  else{
       console.log("try again!");
   }
   
